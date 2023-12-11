@@ -168,7 +168,7 @@ server.listen(PORT, () => {
 });
 
 app.get('/', (req, res) => {
-    res.send('<h1>Deploy correcto en ${domain}:${PORT}</h1>');
+    res.send(`<h1>Deploy correcto en ${domain}:${PORT}</h1>`);
 });
 
 
