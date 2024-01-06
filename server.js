@@ -160,15 +160,13 @@ function broadcastConnectionCount(userId) {
 }
 
 // Iniciar el servidor
-const PORT = process.env.PORT || 80;//3000;
-// Obtener el dominio del proveedor si está disponible
-const domain = process.env.PROVIDER_DOMAIN || 'localhost';
+const PORT = process.env.PORT || 3000;//3000;
+// Obtener el dominio del proveedor si está disponible process.env.PROVIDER_DOMAIN
+const domain = 'localhost';
 server.listen(PORT, () => {
   console.log(`Server correcto running on http://${domain}:${PORT}`);
 });
 
-app.get('/', (req, res) => {
-    res.send(`<h1>Deploy correcto en ${domain}:${PORT}</h1>`);
-});
+
 
 
